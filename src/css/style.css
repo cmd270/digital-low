@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Chiva Mono', monospace;
+    font-weight: 300;
+}
+
+.navbar{
+    background: linear-gradient(149deg, rgba(24,187,156,1) 0%, rgba(106,57,175,1) 42%, rgba(187,24,148,1) 72%, rgba(115,53,134,1) 100%);
+    animation: gradient 10s ease infinite;
+    padding: 25px 100px;
+    font-size: 25px;
+    background-size: 400% 400%;
+    font-weight: 600;
+}
+@keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+header{
+    font-size: 40px;
+    color:black;
+}
+li{
+    display:inline;
+    margin-right: 30px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+a:before, a:after {
+  content: '';
+  border-bottom: solid 1px white;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+}
+a:before { left: 0; }
+a:after { right: 0; }
+
+a:hover:before, a:hover:after {
+  width: 50%;
+}
+
+a:before, a:after {
+          transition: all 0.2s ease;
+}
+.about{
+    padding: 3% 10% 0% 5%;
+    position: absolute;
+    animation: ani 1s forwards;
+}
+
+.about p{
+    font-weight: 350;
+    padding: 2% 1%;
+    font-size: 20px;
+}
+.about b{
+    padding: 2% 0 0 0;
+    font-size: 30px;
+}
+.about img{
+    width: 250px;
+    float: right;
+}
+.contacts{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 3% 10% 0% 5%;
+    animation: ani 1s forwards;
+}
+.contacts a{
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+.contacts a:before{
+  content: '';
+  border-bottom: solid 1px black;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+}
+.contacts li{
+    padding: 10px;
+    display: inherit;
+}
+
+.models {
+    padding: 3% 10% 0% 5%;
+    position: absolute;
+    animation: ani 1s forwards;
+}
+
+.models p{
+    font-weight: 350;
+    padding: 2% 1%;
+    font-size: 20px;
+}
+
+.models b{
+    padding: 2% 0 0 0;
+    font-size: 30px;
+}
+
+.models img{
+    padding: 2% 0 0 0;
+}
+
+.s55pic
+{
+    width: 533px;
+    height: 368px;
+}
+
+.photos{
+    padding: 3% 10% 0% 5%;
+    animation: ani 1s forwards;
+}
+
+@keyframes ani{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.Iam {
+  padding: 9% 10% 0% 5%;
+  font: normal 170px/180px 'Chiva Mono',monospace;
+  color: black;
+  animation: ani 1s forwards;
+}
+.Iam p {
+  font-weight: 400;
+  height: 50px;
+  float: left;
+  margin-bottom:30px;
+  margin-right: 0.3em;
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 180px;
+  top: 100px;
+}
+.Iam .innerIam {
+  display: inline-block;
+  color: blue;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+
+/*animation*/
+        animation:move 5s;
+/*animation-iteration-count*/
+        animation-iteration-count:infinite;
+/*animation-delay*/
+        animation-delay:1s;
+}
+@keyframes move{
+0%  { top: 0px; }
+20% { top: -160px; }
+40% { top: -360px; }
+60% { top: -558px; }
+80% { top: -755px; }
+}
